@@ -1,1 +1,0 @@
-This is a place holder to make git not removing empty directory and destroy project structure

@@ -1,0 +1,184 @@
+This is the format specification of .json which is used to be the instruction sent to server
+
+Here is the formate, you can either choose 1st or the 2ed formate, but don't mix them together
+
+	1st:
+		{
+			COMMAND: string,
+			Datas: [string]
+		}
+
+	2nd:
+		{COMMAND: string, Datas: [string]}
+
+There are 13 kinds of basic instruction should be implemented.(Remember the " in the string needs to be \")
+Format and real Examples are in the following description.
+
+
+1. sign up
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [Username, Password]	//When verification functionality is done, Username could be replaced by mail if the mail is verified before.
+		}
+	Ex
+		{
+			COMMAND: "Sign up",
+			DATAS: ["B10915055", "A1b2c3999"]
+		}
+
+
+2. sign in
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [Username, Password]	//When verification functionality is done, Username could be replaced by mail if the mail is verified before.
+		}
+	Ex
+		{
+			COMMAND: "Sign in",
+			DATAS: ["B10915055", "A1b2c3999:]
+		}
+
+
+3. Search
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [BigCategory, SubCategory, KeyWords]
+		}
+	Ex
+		{
+			COMMAND: "Search",
+			DATAS: ["Science", "Physics", "等加速度直線運動"]
+		}
+
+
+4. View Article
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [ArticleID]
+		}
+	Ex
+		{
+			COMMAND: "View Article",
+			DATAS: ["228922"]
+		}
+
+
+5. Comment
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [Content]
+		}
+	Ex
+		{
+			COMMAND: "Comment",
+			DATAS: ["你的小鳥好可愛"]
+		}
+
+
+6. Donate
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [Amount, ArticleID]
+		}
+	Ex
+		{
+			COMMAND: "Donate",
+			DATAS: ["5", "696"]
+		}
+
+
+7. Star
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [ArticleID]
+		}
+	Ex
+		{
+			COMMAND: "Star",
+			DATAS: ["969"]
+		}
+
+
+8. Post Article
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [BigCategory, SubCategory, Title, Content]
+		}
+	Ex
+		{
+			COMMAND: "Post Article",
+			DATAS: ["Game", "Shadowverse", "快攻沒人權", "融合復仇者整天Token整排守護+回血，快攻場面都沒那麼大，打三小"]
+		}
+
+
+9. View Other User
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [UserID]
+		}
+	Ex
+		{
+			COMMAND: "View Other User",
+			DATAS: ["0000000000001"]
+		}
+
+
+10. Follow
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [UserID]
+		}
+	Ex
+		{
+			COMMAND: "Follow",
+			DATAS: ["00000120000999"]
+		}
+
+
+11. Change User Name
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [NewName]
+		}
+	Ex
+		{
+			COMMAND: "Change User Name",
+			DATAS: ["MattLiao"]
+		}
+
+
+12. Change Self Introduction
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [New Introduction]
+		}
+	Ex
+		{
+			COMMAND: "Change Self Introduction",
+			DATAS: ["我是一隻小小小小鳥，整天只想躺平不想飛高高“]
+		}
+
+
+13. Change Portrait
+	Format
+		{
+			COMMAND: Instruction,
+			DATAS: [Img]
+		}
+	Ex
+		{
+			COMMAND: "Change Portrait",
+			DATAS: ["0097"]
+		}
