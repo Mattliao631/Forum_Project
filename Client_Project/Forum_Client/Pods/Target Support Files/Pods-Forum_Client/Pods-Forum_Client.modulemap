@@ -1,0 +1,6 @@
+framework module Pods_Forum_Client {
+  umbrella header "Pods-Forum_Client-umbrella.h"
+
+  export *
+  module * { export * }
+}
