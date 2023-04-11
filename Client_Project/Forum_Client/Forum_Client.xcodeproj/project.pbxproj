@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A285629E577E300A45BED /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A285529E577E300A45BED /* ArticleViewController.swift */; };
 		040F7DE429DC412400B56CA8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F7DE329DC412400B56CA8 /* SearchViewController.swift */; };
 		042414C929D05DA500763A59 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042414C829D05DA500763A59 /* SignInViewController.swift */; };
 		042FDFB429D6B7030004A3E6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FDFB329D6B7030004A3E6 /* SignUpViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A285529E577E300A45BED /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		040F7DE329DC412400B56CA8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		042414C829D05DA500763A59 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		042FDFB329D6B7030004A3E6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				04433E3429D95A00005A644B /* HomePageViewController.swift */,
 				0443418929DACE8B0071D21D /* SocketManageViewController.swift */,
 				040F7DE329DC412400B56CA8 /* SearchViewController.swift */,
+				040A285529E577E300A45BED /* ArticleViewController.swift */,
 			);
 			path = Forum_Client;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042414C929D05DA500763A59 /* SignInViewController.swift in Sources */,
+				040A285629E577E300A45BED /* ArticleViewController.swift in Sources */,
 				040F7DE429DC412400B56CA8 /* SearchViewController.swift in Sources */,
 				048C6E7129D049E900C6B349 /* AppDelegate.swift in Sources */,
 				042FDFB429D6B7030004A3E6 /* SignUpViewController.swift in Sources */,
@@ -375,6 +379,7 @@
 				DEVELOPMENT_TEAM = C8QMLJ5PZ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Forum_Client/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -404,6 +409,7 @@
 				DEVELOPMENT_TEAM = C8QMLJ5PZ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Forum_Client/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -7,8 +7,14 @@
 
 import UIKit
 
-class ArticleViewController: UIViewController {
-
+class AritcleCell: UITableViewCell {
+    
+}
+class CommentCell: UITableViewCell {
+    
+}
+class ArticleViewController: SocketManageViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

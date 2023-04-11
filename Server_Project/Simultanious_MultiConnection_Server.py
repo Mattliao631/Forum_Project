@@ -1,7 +1,7 @@
 import threading
 import socket
 import time
-
+import queue
 
 # ConnectionThread 繼承自 threading(file) 中的 Thread(class)
 # 成功連接的連線都會生成一個此物件來封裝該連線，並且加入connection_pool方便管理
@@ -73,7 +73,12 @@ connection_handler = ConnectionHandler("Socket1")
 connection_handler.daemon = True
 connection_handler.start()
 
-# 主程式(遊戲或論壇主架構)邏輯
+# 因為需要讓資料庫操作具有 Mutual Exclusion因此採用一個Queue來儲存須對資料庫進行的所有操作
+# 再由 Main Thread 逐一讀取並進行操作
+instruction_queue = queue.Queue()
+
+# 主程式邏輯
 while True:
     print("is processing")
+    instruction_queue.get()
     time.sleep(5)
