@@ -13,7 +13,7 @@ class SearchResultCell: UITableViewCell {
 }
 class SearchViewController: SocketManageViewController, UITableViewDelegate, UITableViewDataSource {
     //(文章標題,作者,文章ID)
-    var searchResult: [(String, String)] = [("Title1", "Author1", "000001")]
+    var searchResult: [(String, String, String)] = [("Title1", "Author1", "000001")]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         searchResult.count
     }
