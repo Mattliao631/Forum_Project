@@ -11,7 +11,7 @@ Here is the formate, you can either choose 1st or the 2ed formate, but don't mix
 	2nd:
 		{COMMAND: string, Datas: [string]}
 
-There are 13 kinds of basic instruction should be implemented.(Remember the " in the string needs to be \")
+There are 12 kinds of basic instruction should be implemented.(Remember the " in the string needs to be \")
 Format and real Examples are in the following description.
 
 
@@ -119,7 +119,7 @@ Format and real Examples are in the following description.
 		}
 
 
-9. View Other User
+9. View User
 	Format
 		{
 			COMMAND: Instruction,
@@ -127,25 +127,11 @@ Format and real Examples are in the following description.
 		}
 	Ex
 		{
-			COMMAND: "View Other User",
+			COMMAND: "View User",
 			DATAS: ["0000000000001"]
 		}
 
-
-10. Follow
-	Format
-		{
-			COMMAND: Instruction,
-			DATAS: [UserID]
-		}
-	Ex
-		{
-			COMMAND: "Follow",
-			DATAS: ["00000120000999"]
-		}
-
-
-11. Change User Name
+10. Change User Name
 	Format
 		{
 			COMMAND: Instruction,
@@ -158,7 +144,7 @@ Format and real Examples are in the following description.
 		}
 
 
-12. Change Self Introduction
+11. Change Self Introduction
 	Format
 		{
 			COMMAND: Instruction,
@@ -171,7 +157,7 @@ Format and real Examples are in the following description.
 		}
 
 
-13. Change Portrait
+12. Change Portrait
 	Format
 		{
 			COMMAND: Instruction,
