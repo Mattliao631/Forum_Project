@@ -110,12 +110,12 @@ Format and real Examples are in the following description.
 	Format
 		{
 			COMMAND: Instruction,
-			DATAS: [BigCategory, SubCategory, Title, Content]
+			DATAS: [BigCategory, SubCategory, Title, Content, Tuple of Tags]
 		}
 	Ex
 		{
 			COMMAND: "Post Article",
-			DATAS: ["Game", "Shadowverse", "快攻沒人權", "融合復仇者整天Token整排守護+回血，快攻場面都沒那麼大，打三小"]
+			DATAS: ["Game", "Shadowverse", "快攻沒人權", "融合復仇者整天Token整排守護+回血，快攻場面都沒那麼大，打三小", ('Shadowverse', 'Complaining')]
 		}
 
 

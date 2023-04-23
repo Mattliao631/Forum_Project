@@ -12,9 +12,9 @@ Here is the format, returned format depending on server, so you should handle ev
             'Message' : 'Sign in 0',
             'Datas': [
                 '0000000001',//UserID
-                ('Title1', 'SucCategory1', 'ArticleID1'),
-                ('Title2', 'SucCategory2', 'ArticleID2'),
-                ('Title3', 'SucCategory3', 'ArticleID3'),
+                ('Title1', 'PortraitID1', 'ArticleID1'),
+                ('Title2', 'PortraitID2', 'ArticleID2'),
+                ('Title3', 'PortraitID3', 'ArticleID3'),
                 ......
             ]
         }
@@ -64,7 +64,7 @@ Here is the format, returned format depending on server, so you should handle ev
         '''
         {
             'Message' : 'View User 0',
-            'Datas': ('UserID', 'Name', 'Introduction', 'PetID', 'PetStage', 'PetExp')
+            'Datas': ('UserID', 'Name', 'Introduction', 'PortraitID', 'PetID', 'PetStage', 'PetExp')
         }
 
 10. Change User Name
