@@ -128,7 +128,7 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			'COMMAND': "View User",
-			'DATAS': [0000000000001]
+			'DATAS': [1]
 		}
 
 10. Change User Name

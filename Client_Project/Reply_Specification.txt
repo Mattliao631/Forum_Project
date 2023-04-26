@@ -64,7 +64,7 @@ Here is the format, returned format depending on server, so you should handle ev
         '''
         {
             'Message' : 'View User 0',
-            'Datas': ('UserID', 'Name', 'Introduction', 'PortraitID', 'PetID', 'PetStage', 'PetExp')
+            'Datas': ('UserID', 'Name', 'Introduction', 'PortraitID', 'PetID', 'PetName', 'PetStage', 'PetExp')
         }
 
 10. Change User Name
