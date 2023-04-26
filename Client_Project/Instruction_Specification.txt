@@ -5,7 +5,7 @@ Here is the formate, you can either choose 1st or the 2ed formate, but don't mix
 	1st:
 		{
 			COMMAND: string,
-			Datas: [string]
+			Datas: [string/int]
 		}
 
 	2nd:
@@ -63,7 +63,7 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			COMMAND: "View Article",
-			DATAS: ["228922"]
+			DATAS: [228922]
 		}
 
 
@@ -71,12 +71,12 @@ Format and real Examples are in the following description.
 	Format
 		{
 			COMMAND: Instruction,
-			DATAS: [ArticleID, Content]
+			DATAS: [UserID, ArticleID, Content]
 		}
 	Ex
 		{
 			COMMAND: "Comment",
-			DATAS: ["你的小鳥好可愛"]
+			DATAS: [1, 2, "你的小鳥好可愛"]
 		}
 
 
@@ -89,7 +89,7 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			COMMAND: "Donate",
-			DATAS: ["5", "696"]
+			DATAS: [5, 696]
 		}
 
 
@@ -102,7 +102,7 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			COMMAND: "Star",
-			DATAS: ["969"]
+			DATAS: [969]
 		}
 
 
@@ -128,7 +128,7 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			COMMAND: "View User",
-			DATAS: ["0000000000001"]
+			DATAS: [0000000000001]
 		}
 
 10. Change User Name
@@ -166,5 +166,5 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			COMMAND: "Change Portrait",
-			DATAS: ["0097"]
+			DATAS: [0097]
 		}
