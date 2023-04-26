@@ -71,7 +71,7 @@ Format and real Examples are in the following description.
 	Format
 		{
 			COMMAND: Instruction,
-			DATAS: [Content]
+			DATAS: [ArticleID, Content]
 		}
 	Ex
 		{

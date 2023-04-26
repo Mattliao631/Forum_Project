@@ -24,11 +24,6 @@ class SearchViewController: SocketManageViewController, UITableViewDelegate, UIT
         cell.Author.text = searchResult[indexPath.row].1
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ArticleVC") as! ArticleViewController {
-            
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

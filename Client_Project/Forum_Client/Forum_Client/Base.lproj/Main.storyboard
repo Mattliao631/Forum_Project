@@ -454,6 +454,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KK2-gh-037" id="mhD-Px-eyd"/>
+                                    <outlet property="delegate" destination="KK2-gh-037" id="vwg-x8-qqz"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UXu-uz-Jxz"/>

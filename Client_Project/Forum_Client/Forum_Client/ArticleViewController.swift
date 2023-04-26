@@ -13,7 +13,19 @@ class AritcleCell: UITableViewCell {
 class CommentCell: UITableViewCell {
     
 }
-class ArticleViewController: SocketManageViewController {
+class ArticleViewController: SocketManageViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var ArticleData = ("Title", "Author", "Content")
+    var CommentDatas = [("Author1", "Content1"), ("Author2", "Content2")]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
