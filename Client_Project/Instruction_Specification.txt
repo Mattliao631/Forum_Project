@@ -24,7 +24,7 @@ Format and real Examples are in the following description.
 	Ex
 		{
 			'COMMAND': "Sign up",
-			'DATAS': ["B10915055", "A1b2c3999", 'B10915055@mail.ntust.edu.tw"]
+			'DATAS': ["B10915055", "A1b2c3999", "B10915055@mail.ntust.edu.tw"]
 		}
 
 
