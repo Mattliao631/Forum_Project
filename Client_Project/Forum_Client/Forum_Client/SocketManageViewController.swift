@@ -14,8 +14,8 @@ class SocketManageViewController: UIViewController, GCDAsyncSocketDelegate {
 
     private var socket: GCDAsyncSocket!
     private var ServerAddress = "127.0.0.1"
-    private var port = "7000"
-    private var receivedData = ""
+    private var port = "9000"
+    public var receivedData = ""
     private var dataBeingSend: Data?
     var received: Bool = false
     
@@ -43,9 +43,11 @@ class SocketManageViewController: UIViewController, GCDAsyncSocketDelegate {
     }
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         self.receivedData = String(data: data, encoding: .utf8)!
+        received = true
         socket.readData(withTimeout: -1, tag: 0)
     }
     func sendData(data:String) {
+        received = false
         dataBeingSend = data.data(using: .utf8)
         socket.write(dataBeingSend, withTimeout: -1, tag: 0)
     }

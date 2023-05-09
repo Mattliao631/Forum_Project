@@ -19,6 +19,8 @@
 		048C6E7A29D049EC00C6B349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048C6E7929D049EC00C6B349 /* Assets.xcassets */; };
 		048C6E7D29D049EC00C6B349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048C6E7B29D049EC00C6B349 /* LaunchScreen.storyboard */; };
 		42A729A61A6ED61996D15D6C /* Pods_Forum_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA17263329987D42234BB5EE /* Pods_Forum_Client.framework */; };
+		7360A1C929F69A6800193E7A /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360A1C829F69A6800193E7A /* ArticleTableViewCell.swift */; };
+		7360A1D129FA4B9800193E7A /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360A1D029FA4B9800193E7A /* CommentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		048C6E7929D049EC00C6B349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048C6E7C29D049EC00C6B349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048C6E7E29D049EC00C6B349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7360A1C829F69A6800193E7A /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		7360A1D029FA4B9800193E7A /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		73A4D52970D0B07350D9F912 /* Pods-Forum_Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forum_Client.debug.xcconfig"; path = "Target Support Files/Pods-Forum_Client/Pods-Forum_Client.debug.xcconfig"; sourceTree = "<group>"; };
 		BA7E5D6736B8C7FA8E5D64A1 /* Pods-Forum_Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forum_Client.release.xcconfig"; path = "Target Support Files/Pods-Forum_Client/Pods-Forum_Client.release.xcconfig"; sourceTree = "<group>"; };
 		CA17263329987D42234BB5EE /* Pods_Forum_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forum_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,8 @@
 				0443418929DACE8B0071D21D /* SocketManageViewController.swift */,
 				040F7DE329DC412400B56CA8 /* SearchViewController.swift */,
 				040A285529E577E300A45BED /* ArticleViewController.swift */,
+				7360A1D029FA4B9800193E7A /* CommentTableViewCell.swift */,
+				7360A1C829F69A6800193E7A /* ArticleTableViewCell.swift */,
 			);
 			path = Forum_Client;
 			sourceTree = "<group>";
@@ -222,11 +228,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				042414C929D05DA500763A59 /* SignInViewController.swift in Sources */,
+				7360A1C929F69A6800193E7A /* ArticleTableViewCell.swift in Sources */,
 				040A285629E577E300A45BED /* ArticleViewController.swift in Sources */,
 				040F7DE429DC412400B56CA8 /* SearchViewController.swift in Sources */,
 				048C6E7129D049E900C6B349 /* AppDelegate.swift in Sources */,
 				042FDFB429D6B7030004A3E6 /* SignUpViewController.swift in Sources */,
 				04433E3529D95A00005A644B /* HomePageViewController.swift in Sources */,
+				7360A1D129FA4B9800193E7A /* CommentTableViewCell.swift in Sources */,
 				0443418A29DACE8B0071D21D /* SocketManageViewController.swift in Sources */,
 				048C6E7329D049E900C6B349 /* SceneDelegate.swift in Sources */,
 			);
@@ -376,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C8QMLJ5PZ3;
+				DEVELOPMENT_TEAM = 5NYB89QG3R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Forum_Client/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -406,7 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C8QMLJ5PZ3;
+				DEVELOPMENT_TEAM = 5NYB89QG3R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Forum_Client/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";

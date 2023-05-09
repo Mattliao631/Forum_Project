@@ -19,15 +19,17 @@ class SignInViewController: SocketManageViewController {
     }
     @IBAction func SignIn(_ sender: UIButton) {
         //傳送輸入的帳號密碼資訊給Server
+        let data:String = "{\"COMMAND\": \"Sign in\",\"DATAS\": [\"\(Account.text!)\", \"\(Password.text!)\"]}"
+        print(data)
+        sendData(data: data)
         //wait for return
         //若Server 回傳登入資料驗證成功則載入個人資料並進入APP主頁
-        if true {
-            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC") {
-                //載入接收到的個人資料
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        } else {
+        
+        print("recv: "+receivedData)
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC") {
+            //載入接收到的個人資料
             
+            //self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     @IBAction func SignUp(_ sender: UIButton) {
