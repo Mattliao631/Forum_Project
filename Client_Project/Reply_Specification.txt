@@ -1,0 +1,77 @@
+This is the format specification of .json which is used to be the reply returned from the server.
+Here is the format, returned format depending on server, so you should handle every single reply for your distinct instruction sent to server.
+"{Message: string, Datas: depends}"
+
+1. sign up
+        "{'Message' : 'Sign up 0', 'Datas' : ''}"
+        //0 in message means success, and 1 means fail.
+
+2. sign in 
+        '''
+        {
+            'Message' : 'Sign in 0',
+            'Datas': [
+                '0000000001',//UserID
+                ('Title1', 'PortraitID1', 'ArticleID1'),
+                ('Title2', 'PortraitID2', 'ArticleID2'),
+                ('Title3', 'PortraitID3', 'ArticleID3'),
+                ......
+            ]
+        }
+        '''
+
+3. Search
+        '''
+        {
+                'Message' : 'Search 0',
+                'Datas' : [
+                    ('Title1', 'Author1', 'ArticleID1'),
+                    ('Title3', 'Author3', 'ArticleID3'),
+                    ('Title4', 'Author4', 'ArticleID4'),
+                    ......
+                ]
+        }
+        '''
+
+4. View Article
+        '''
+        {
+            'Message' : 'View Article 0',
+            'Datas' : [
+                ('Title', 'ArticleID', 'Content', 'AuthorID', 'AuthorName', 'StarNumber'),
+                ('Comment1', 'CommenterID1', 'CommenterName1'),
+                ('Comment2', 'CommenterID2', 'CommenterName2'),
+                ('Comment3', 'CommenterID3', 'CommenterName3')
+            ]
+        }
+        '''
+
+5. Comment      //留言後自己append一份到陣列，刷新一次TableView，出去再進來（重新View Article才會資料庫中真正的留言順序
+        "{'Message' : 'Comment 0', 'Datas' : ''}"
+
+6. Donate
+        "{'Message' : 'Donate 1', 'Datas' : '0'}"       //when you don't have enough Cookies, Datas indicate the number of cookie you have
+        "{'Message' : 'Donate 0', 'Datas' : '10'}"      //when you succeed donating, Datas tells your rest cookie number.
+
+7. Star         //按讚/取消讚後文章按讚數+1/-1，出去再進來才會真正取得資料庫中的按讚數
+        "{'Message' : 'Star 0', 'Datas' : ''}"
+        “{'Message' : 'Star 1', 'Datas' : ''}"      //this means you tap star the second(even) time so that server removed the like in the database.
+
+8. Post Article
+        "{'Message' : 'Post Article 0', 'Datas' : ''}"
+
+9. View User
+        '''
+        {
+            'Message' : 'View User 0',
+            'Datas': ('UserID', 'Name', 'Introduction', 'PortraitID', 'PetID', 'PetName', 'PetStage', 'PetExp')
+        }
+
+10. Change User Name
+        "{'Message' : 'Change User Name 0', 'Datas' : ''}"
+
+11. Change Self Introduction
+        "{'Message' : 'Change Self Introduction 0', 'Datas' : ''}"
+
+12. Change Portrait
+        "{'Message' : 'Change Portrait', 'Datas' : ''}"
