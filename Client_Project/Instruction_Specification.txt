@@ -5,7 +5,7 @@ Here is the formate, you can either choose 1st or the 2ed formate, but don't mix
 	1st:
 		{
 			'COMMAND': string,
-			'Datas': [string/int]
+			'Datas': [string/int or tuple(string/int)]
 		}
 
 	2nd:
@@ -19,12 +19,12 @@ Format and real Examples are in the following description.
 	Format
 		{
 			'COMMAND': Instruction,
-			'DATAS': [Username, Password]	//When verification functionality is done, Username could be replaced by mail if the mail is verified before.
+			'DATAS': [Username, Password, Mail]	//When verification functionality is done, Username could be replaced by mail if the mail is verified before.
 		}
 	Ex
 		{
 			'COMMAND': "Sign up",
-			'DATAS': ["B10915055", "A1b2c3999"]
+			'DATAS': ["B10915055", "A1b2c3999", 'B10915055@mail.ntust.edu.tw"]
 		}
 
 
@@ -45,12 +45,12 @@ Format and real Examples are in the following description.
 	Format
 		{
 			'COMMAND': Instruction,
-			'DATAS': [BigCategory, SubCategory, KeyWords]
+			'DATAS': [BigCategory, SubCategory, Tags_Tuple]
 		}
 	Ex
 		{
 			'COMMAND': "Search",
-			'DATAS': ["Science", "Physics", "等加速度直線運動"]
+			'DATAS': ["Science", "Physics", ("等加速度直線運動")]
 		}
 
 
@@ -135,12 +135,12 @@ Format and real Examples are in the following description.
 	Format
 		{
 			'COMMAND': Instruction,
-			'DATAS': [NewName]
+			'DATAS': [UserID, NewName]
 		}
 	Ex
 		{
 			'COMMAND': "Change User Name",
-			'DATAS': ["MattLiao"]
+			'DATAS': [0, "MattLiao"]
 		}
 
 
@@ -148,12 +148,12 @@ Format and real Examples are in the following description.
 	Format
 		{
 			'COMMAND': Instruction,
-			'DATAS': [New Introduction]
+			'DATAS': [UserID, New Introduction]
 		}
 	Ex
 		{
 			'COMMAND': "Change Self Introduction",
-			'DATAS': ["我是一隻小小小小鳥，整天只想躺平不想飛高高“]
+			'DATAS': [0, "我是一隻小小小小鳥，整天只想躺平不想飛高高“]
 		}
 
 
@@ -161,10 +161,15 @@ Format and real Examples are in the following description.
 	Format
 		{
 			'COMMAND': Instruction,
-			'DATAS': [Img]
+			'DATAS': [UserID, PortraitID]
 		}
 	Ex
 		{
 			'COMMAND': "Change Portrait",
+<<<<<<< HEAD
+			'DATAS': [0, 0097]
+		}
+=======
 			'DATAS': [0097]
 		}
+>>>>>>> d63a49c264f25fe198ad22c6020e48e2167ebf60
